@@ -1,7 +1,7 @@
 
 # todo 📃
 
-Desafio dado pela [Rocketseat](https://www.rocketseat.com.br/) na trilha Ignite, a qual estou comprometido neste momento.  
+Desafio dado pela [Rocketseat](https://www.rocketseat.com.br/) na Trilha ReactJS do Ignite, a qual estou comprometido neste momento.  
 Segui **fielmente** o [protótipo](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate) feito para o desafio no Figma, me botando a prova e fazendo a aplicação completa em tempo recorde. ☄  
 Fui além do que foi pedido, e estou muito contente com o resultado! 🎀  
 ⌚ Terminado em: **5 horas** `=>` 2 dias
@@ -24,9 +24,10 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 - Propriedades
 - Componentização
 
-## Melhorias
+## Melhorias 
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
+- Responsividade. Responsivo para dispositivos móveis e tablets também.
 
 ## Stack utilizada
 
