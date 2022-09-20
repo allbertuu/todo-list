@@ -41,7 +41,7 @@ export const TaskCard = ({ task }: TaskCardProps) => {
         </Checkbox.Indicator>
       </Checkbox.Root>
       <p
-        className={`text-xs sm:text-sm overflow-auto break-words flex-1 ${
+        className={`text-sm overflow-auto break-words flex-1 ${
           task.isDone ? "text-[#808080] line-through" : "text-white"
         }`}
       >
