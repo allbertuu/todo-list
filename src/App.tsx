@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="h-screen text-[#808080]">
       <div className="h-[200px] bg-[#0D0D0D] absolute top-0 right-0 left-0">
-        <div className="max-w-[736px] mx-auto">
+        <div className="max-w-[736px] mx-auto px-5">
           {/* logo brand row container */}
           <div className="mt-[72px] mb-[53px] flex items-center justify-center gap-3">
             <img src={rocketIcon} alt="rocket-icon" />
@@ -29,7 +29,9 @@ function App() {
             {/* infos row container */}
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
-                <h2 className="font-bold text-[#4EA8DE]">Tarefas criadas</h2>
+                <h2 className="font-bold text-[#4EA8DE] text-sm sm:text-base">
+                  Tarefas criadas
+                </h2>
                 <span
                   className="font-bold py-[1px] px-2 text-[12px] text-white
                   flex items-center bg-[#333333] rounded-full"
@@ -38,7 +40,9 @@ function App() {
                 </span>
               </div>
               <div className="flex gap-2 items-center">
-                <h2 className="font-bold text-[#8284FA]">Concluídas</h2>
+                <h2 className="font-bold text-[#8284FA] text-sm sm:text-base">
+                  Concluídas
+                </h2>
                 <span
                   className="font-bold py-[1px] px-2 text-[12px] text-white
                   flex items-center bg-[#333333] rounded-full"

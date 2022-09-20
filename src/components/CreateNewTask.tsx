@@ -35,7 +35,7 @@ export const CreateNewTask = () => {
         value={inputValue}
         placeholder="Adicione uma nova tarefa"
         onChange={(e) => handleInputChange(e)}
-        className="flex-1 text-white/80 bg-[#262626] placeholder:text-[#808080]
+        className="text-sm sm:text-base flex-1 w-full text-white/80 bg-[#262626] placeholder:text-[#808080]
         rounded-lg p-4 outline outline-1 outline-[#0D0D0D]"
       />
       <button
@@ -43,7 +43,7 @@ export const CreateNewTask = () => {
         onClick={handleAddTask}
         className="bg-[#1E6F9F] hover:bg-[#2284bd] active:bg-[#19608a]
         text-white rounded-lg w-[90px] font-bold flex items-center
-        justify-center gap-2 text-sm p-4"
+        justify-center gap-2 text-xs sm:text-sm p-4"
       >
         Criar
         <img src={plusIcon} alt="plus-icon" />
