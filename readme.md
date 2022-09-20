@@ -24,9 +24,10 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 - Propriedades
 - Componentização
 
-## Melhorias
+## Melhorias 
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
+- Responsividade. Responsivo para dispositivos móveis e tablets também.
 
 ## Stack utilizada
 
