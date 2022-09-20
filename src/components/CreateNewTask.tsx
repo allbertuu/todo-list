@@ -35,8 +35,9 @@ export const CreateNewTask = () => {
         value={inputValue}
         placeholder="Adicione uma nova tarefa"
         onChange={(e) => handleInputChange(e)}
-        className="text-sm sm:text-base flex-1 w-full text-white/80 bg-[#262626] placeholder:text-[#808080]
-        rounded-lg p-4 outline outline-1 outline-[#0D0D0D]"
+        className="text-sm sm:text-base flex-1 w-full text-white/80 bg-[#262626] 
+        placeholder:text-[#808080] rounded-lg p-4 outline outline-1
+        outline-[#0D0D0D] focus:outline-[#1E6F9F] transition-all duration-300"
       />
       <button
         type="button"
