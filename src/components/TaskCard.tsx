@@ -17,6 +17,9 @@ export const TaskCard = ({ task }: TaskCardProps) => {
     dispatch(updateTask(task));
   };
 
+  const justFirstLetterToUppercase = (string: string) =>
+    string[0].toUpperCase() + string.slice(1);
+
   return (
     <div
       onClick={handleUpdateTask}
@@ -38,11 +41,11 @@ export const TaskCard = ({ task }: TaskCardProps) => {
         </Checkbox.Indicator>
       </Checkbox.Root>
       <p
-        className={`text-xs sm:text-sm overflow-auto break-words flex-1 capitalize ${
+        className={`text-xs sm:text-sm overflow-auto break-words flex-1 ${
           task.isDone ? "text-[#808080] line-through" : "text-white"
         }`}
       >
-        {task.taskText}
+        {justFirstLetterToUppercase(task.taskText)}
       </p>
       <button type="button" onClick={() => dispatch(removeTask(task))}>
         <img src={trashIcon} alt="trash-icon" />
