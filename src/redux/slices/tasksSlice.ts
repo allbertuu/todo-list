@@ -20,7 +20,7 @@ export const tasksSlice = createSlice({
           task.taskText.toUpperCase() === action.payload.taskText.toUpperCase()
       );
       if (taskAlreadyCreated) {
-        alert("Essa task já existe.");
+        alert("Essa tarefa já existe.");
       } else {
         state.unshift(action.payload);
       }
