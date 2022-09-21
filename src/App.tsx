@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import rocketIcon from "./assets/rocket-icon.svg";
 import { TaskCard } from "./components/TaskCard";
 import clipboardIcon from "./assets/Clipboard.png";
