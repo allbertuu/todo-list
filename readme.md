@@ -34,7 +34,7 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 
 ## Stack utilizada
 
-**Front-end:** ReactJS, Redux, TailwindCSS, TypeScript, Vite, Radix UI
+**Front-end:** ReactJS, Redux, TailwindCSS, TypeScript, Vite (ambiente de desenvolvimento Frontend), Radix UI
 
 ## Aprendizados
 
@@ -63,7 +63,7 @@ Nesse desafio enfrentei problemas.
       return 0;
     }
     // uso da função
-    array.sort((a,b)sortNotDoneToDone(a, b))
+    array.sort((a, b) => sortNotDoneToDone(a, b))
 
     ```
 
