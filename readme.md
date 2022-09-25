@@ -63,7 +63,7 @@ Nesse desafio enfrentei problemas.
         return 0;
     }
     // uso da função
-    array.sort((a, b) => sortNotDoneToDone(a, b))
+    array.sort(sortNotDoneToDone)
 ```  
     
 > Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
