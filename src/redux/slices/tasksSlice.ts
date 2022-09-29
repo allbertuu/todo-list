@@ -39,7 +39,7 @@ export const tasksSlice = createSlice({
           task.isDone = !task.isDone;
         }
       });
-      state.sort((a, b) => sortNotDoneToDone(a, b));
+      state.sort(sortNotDoneToDone);
     },
   },
 });

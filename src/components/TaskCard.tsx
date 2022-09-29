@@ -20,20 +20,28 @@ export const TaskCard = ({ task }: TaskCardProps) => {
   const justFirstLetterToUppercase = (string: string) =>
     string[0].toUpperCase() + string.slice(1);
 
+  const textStyleIfTaskIsDone = task.isDone
+    ? "text-[#808080] line-through"
+    : "text-white";
+
+  const checkboxStyleIfTaskIsDone = task.isDone
+    ? "bg-[#5E60CE]"
+    : "border-2 border-[#4EA8DE]";
+
+  const divStyleIfTaskIsDone = task.isDone
+    ? ""
+    : "outline outline-1 outline-[#333333] shadow-md";
+
   return (
     <div
       onClick={handleUpdateTask}
-      className={`rounded-lg min-h-[56px] flex p-5
-      bg-[#262626] cursor-pointer items-start ${
-        task.isDone ? "" : "outline outline-1 outline-[#333333] shadow-md"
-      }`}
+      className={`rounded-lg min-h-[56px] flex p-5 bg-[#262626] cursor-pointer
+      items-start ${divStyleIfTaskIsDone}`}
     >
       <Checkbox.Root
         value={`${task.isDone}`}
         checked={task.isDone}
-        className={`bg-[#262626] w-[17px] h-[17px] p-1 ${
-          task.isDone ? "bg-[#5E60CE]" : "border-2 border-[#4EA8DE]"
-        }
+        className={`bg-[#262626] w-[17px] h-[17px] p-1 ${checkboxStyleIfTaskIsDone}
         rounded-full mr-4`}
       >
         <Checkbox.Indicator>
@@ -41,9 +49,7 @@ export const TaskCard = ({ task }: TaskCardProps) => {
         </Checkbox.Indicator>
       </Checkbox.Root>
       <p
-        className={`text-sm overflow-auto break-words flex-1 ${
-          task.isDone ? "text-[#808080] line-through" : "text-white"
-        }`}
+        className={`text-sm overflow-auto break-words flex-1 ${textStyleIfTaskIsDone}`}
       >
         {justFirstLetterToUppercase(task.taskText)}
       </p>
