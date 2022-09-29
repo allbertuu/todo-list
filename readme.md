@@ -34,7 +34,7 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 
 ## Stack utilizada
 
-**Front-end:** ReactJS, Redux, TailwindCSS, TypeScript, Vite, Radix UI
+**Front-end:** ReactJS, Redux, TailwindCSS, TypeScript, Vite (ambiente de desenvolvimento Frontend), Radix UI
 
 ## Aprendizados
 
@@ -46,28 +46,27 @@ Nesse desafio enfrentei problemas.
 
 ### Função que me orgulho (falada acima)
 
-    ```ts
+```typescript
     function sortNotDoneToDone<TaskType extends TaskState>(
-      a: TaskType,
-      b: TaskType
+        a: TaskType,
+        b: TaskType
     ) {
-      // anterior não feito, próximo sim
-      if (!a.isDone && b.isDone) {
-      return -1;
-      }
-      // anterior feito, próximo não
-      if (a.isDone && !b.isDone) {
-      return 1;
-      }
-      // ambos feitos, ou não
-      return 0;
+        // anterior não feito, próximo sim
+        if (!a.isDone && b.isDone) {
+          return -1;
+        }
+        // anterior feito, próximo não
+        if (a.isDone && !b.isDone) {
+          return 1;
+        }
+        // ambos feitos, ou não
+        return 0;
     }
     // uso da função
-    array.sort((a,b)sortNotDoneToDone(a, b))
-
-    ```
-
-Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
+    array.sort(sortNotDoneToDone)
+```  
+    
+> Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
 
 ## Rodando localmente
 
