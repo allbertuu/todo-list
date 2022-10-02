@@ -60,22 +60,22 @@ function App() {
             {/* infos row container */}
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
-                <h2 className="font-bold text-[#4EA8DE] text-sm sm:text-base">
+                <h2 className="font-bold text-[#4EA8DE] text-base">
                   Tarefas criadas
                 </h2>
                 <span
-                  className="font-bold py-[1px] px-2 text-[12px] text-gray-500 dark:text-white
+                  className="font-bold py-0.5 px-2 text-xs text-gray-500 dark:text-white
                   flex items-center bg-slate-200 dark:bg-[#333333] rounded-full"
                 >
                   {tasks.length}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
-                <h2 className="font-bold text-[#8284FA] text-sm sm:text-base">
+                <h2 className="font-bold text-[#8284FA] text-base">
                   Concluídas
                 </h2>
                 <span
-                  className="font-bold py-[1px] px-2 text-[12px] text-gray-500 dark:text-white
+                  className="font-bold py-[1px] px-2 text-xs text-gray-500 dark:text-white
                   flex items-center bg-slate-200 dark:bg-[#333333] rounded-full"
                 >
                   {tasks.filter((task) => task.isDone).length}
