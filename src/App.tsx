@@ -1,22 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import rocketIcon from "./assets/rocket-icon.svg";
 import { TaskCard } from "./components/TaskCard";
 import clipboardIcon from "./assets/Clipboard.png";
 import { useSelector } from "react-redux";
 import { selectTasks } from "./redux/slices/tasksSlice";
 import { CreateNewTask } from "./components/CreateNewTask";
+import { CloudMoon, CloudSun } from "phosphor-react";
 
 function App() {
   const tasks = useSelector(selectTasks);
+  const [appTheme, setAppTheme] = useState(
+    localStorage.getItem("theme") !== "dark" ? "light" : "dark"
+  );
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const oldTheme = appTheme === "dark" ? "light" : "dark";
+    root.classList.remove(oldTheme);
+    root.classList.add(appTheme);
+    localStorage.setItem("theme", appTheme);
+  }, [appTheme]);
 
   return (
     <div className="h-screen text-[#808080]">
-      <div className="h-[200px] bg-[#0D0D0D] absolute top-0 right-0 left-0">
+      <div
+        className="h-[200px] bg-white dark:bg-[#0D0D0D] absolute top-0
+        right-0 left-0 transition-colors duration-200"
+      >
+        {/* turn app theme row container */}
+        <div>
+          <button
+            onClick={() => setAppTheme("dark")}
+            className="dark:hidden absolute right-8 top-5"
+          >
+            <CloudSun className="text-gray-700 text-3xl dark:text-white/90" />
+          </button>
+
+          <button
+            onClick={() => setAppTheme("light")}
+            className="hidden dark:inline absolute right-8 top-5 cursor-pointer"
+          >
+            <CloudMoon className="text-black text-3xl dark:text-white/90" />
+          </button>
+        </div>
+
         <div className="max-w-[736px] mx-auto px-5">
           {/* logo brand row container */}
           <div className="mt-[72px] mb-[53px] flex items-center justify-center gap-3">
             <img src={rocketIcon} alt="rocket-icon" />
-            <h1 className="text-white font-black text-[40px] leading-[48px]">
+            <h1 className="font-black text-[40px] leading-[48px]">
               <span className="text-[#4EA8DE]">to</span>
               <span className="text-[#5E60CE]">do</span>
             </h1>
@@ -32,8 +64,8 @@ function App() {
                   Tarefas criadas
                 </h2>
                 <span
-                  className="font-bold py-[1px] px-2 text-[12px] text-white
-                  flex items-center bg-[#333333] rounded-full"
+                  className="font-bold py-[1px] px-2 text-[12px] text-gray-500 dark:text-white
+                  flex items-center bg-slate-200 dark:bg-[#333333] rounded-full"
                 >
                   {tasks.length}
                 </span>
@@ -43,8 +75,8 @@ function App() {
                   Concluídas
                 </h2>
                 <span
-                  className="font-bold py-[1px] px-2 text-[12px] text-white
-                  flex items-center bg-[#333333] rounded-full"
+                  className="font-bold py-[1px] px-2 text-[12px] text-gray-500 dark:text-white
+                  flex items-center bg-slate-200 dark:bg-[#333333] rounded-full"
                 >
                   {tasks.filter((task) => task.isDone).length}
                 </span>

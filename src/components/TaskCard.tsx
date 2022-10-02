@@ -22,26 +22,26 @@ export const TaskCard = ({ task }: TaskCardProps) => {
 
   const textStyleIfTaskIsDone = task.isDone
     ? "text-[#808080] line-through"
-    : "text-white";
+    : "text-black/80 dark:text-white";
 
   const checkboxStyleIfTaskIsDone = task.isDone
-    ? "bg-[#5E60CE]"
+    ? "bg-[#5E60CE] dark:bg-[#5E60CE]"
     : "border-2 border-[#4EA8DE]";
 
   const divStyleIfTaskIsDone = task.isDone
     ? ""
-    : "outline outline-1 outline-[#333333] shadow-md";
+    : "outline outline-1 outline-gray-200 dark:outline-[#333333] shadow-md";
 
   return (
     <div
       onClick={handleUpdateTask}
-      className={`rounded-lg min-h-[56px] flex p-5 bg-[#262626] cursor-pointer
+      className={`rounded-lg min-h-[56px] flex p-5 bg-slate-100 dark:bg-[#262626] cursor-pointer
       items-start ${divStyleIfTaskIsDone}`}
     >
       <Checkbox.Root
         value={`${task.isDone}`}
         checked={task.isDone}
-        className={`bg-[#262626] w-[17px] h-[17px] p-1 ${checkboxStyleIfTaskIsDone}
+        className={`dark:bg-[#262626] w-[17px] h-[17px] p-1 ${checkboxStyleIfTaskIsDone}
         rounded-full mr-4`}
       >
         <Checkbox.Indicator>

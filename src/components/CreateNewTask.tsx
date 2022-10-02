@@ -35,14 +35,17 @@ export const CreateNewTask = () => {
         value={inputValue}
         placeholder="Adicione uma nova tarefa"
         onChange={(e) => handleInputChange(e)}
-        className="text-sm sm:text-base flex-1 w-full text-white/80 bg-[#262626] 
-        placeholder:text-[#808080] rounded-lg p-4 outline outline-1
-        outline-[#0D0D0D] focus:outline-[#1E6F9F] transition-all duration-300"
+        className="text-sm sm:text-base flex-1 w-full dark:text-white/80 dark:bg-[#262626]
+        bg-slate-100 outline-gray-200 text-black/80
+        dark:placeholder:text-[#808080] rounded-lg p-4 outline outline-1
+        dark:outline-[#0D0D0D] focus:outline-[#2895d4] dark:focus:outline-[#1E6F9F]
+        transition-all duration-300"
       />
       <button
         type="button"
         onClick={handleAddTask}
-        className="bg-[#1E6F9F] hover:bg-[#2284bd] active:bg-[#19608a]
+        className="bg-[#268cc7] hover:bg-[#2a9cdd] active:bg-[#217baf]
+        dark:bg-[#1E6F9F] dark:hover:bg-[#2284bd] dark:active:bg-[#19608a]
         text-white rounded-lg w-[90px] font-bold flex items-center
         justify-center gap-2 text-xs sm:text-sm p-4"
       >

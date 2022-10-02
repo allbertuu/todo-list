@@ -13,14 +13,31 @@
     <meta name="application-name" content="todo" />
     <meta name="author" content="Alberto Santos" />
     <meta name="description" content="todo - sua lista de tarefas favorita!" />
-    <meta name="keywords" content="todo, todo-list, rocketseat, app, lista, lista-de-tarefas" />
+    <meta
+      name="keywords"
+      content="todo, todo-list, rocketseat, app, lista, lista-de-tarefas"
+    />
     <meta http-equiv="content-language" content="pt-br" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // On page load or when changing themes, is best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
     <title>📃 todo | sua lista de tarefas</title>
   </head>
-  <body class="bg-[#1A1A1A]">
+  <body class="bg-slate-50 dark:bg-[#1A1A1A] transition-colors duration-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
