@@ -31,6 +31,7 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
 - Responsividade. Responsivo para dispositivos móveis e tablets também.
+- Adicionado temas. "Light Theme" para modo claro, e "Dark Theme" para modo escuro. Possui persistência usando o LocalStorage no ReactJS.
 
 ## Stack utilizada
 
@@ -47,25 +48,25 @@ Nesse desafio enfrentei problemas.
 ### Função que me orgulho (falada acima)
 
 ```typescript
-    function sortNotDoneToDone<TaskType extends TaskState>(
-        a: TaskType,
-        b: TaskType
-    ) {
-        // anterior não feito, próximo sim
-        if (!a.isDone && b.isDone) {
-          return -1;
-        }
-        // anterior feito, próximo não
-        if (a.isDone && !b.isDone) {
-          return 1;
-        }
-        // ambos feitos, ou não
-        return 0;
-    }
-    // uso da função
-    array.sort(sortNotDoneToDone)
-```  
-    
+function sortNotDoneToDone<TaskType extends TaskState>(
+  a: TaskType,
+  b: TaskType
+) {
+  // anterior não feito, próximo sim
+  if (!a.isDone && b.isDone) {
+    return -1;
+  }
+  // anterior feito, próximo não
+  if (a.isDone && !b.isDone) {
+    return 1;
+  }
+  // ambos feitos, ou não
+  return 0;
+}
+// uso da função
+array.sort(sortNotDoneToDone);
+```
+
 > Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
 
 ## Rodando localmente
