@@ -11,7 +11,7 @@ Live: https://todo-ecru-ten.vercel.app/
 
 ## Sobre o desafio ⚡
 
-Nesse desafio, você desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+Nesse desafio, desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova tarefa
 - Marcar e desmarcar uma tarefa como concluída
