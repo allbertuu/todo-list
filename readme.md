@@ -5,20 +5,20 @@ Segui **fielmente** o [protótipo](https://www.figma.com/file/0n0zDN7zbzhRbaEO74
 Fui além do que foi pedido, e estou muito contente com o resultado! 🎀  
 ⌚ Terminado em: **5 horas** `=>` 2 dias
 
-### Deploy
+### Deploy 💻
 
 Live: https://todo-ecru-ten.vercel.app/
 
-## Sobre o desafio
+## Sobre o desafio ⚡
 
-Nesse desafio, você vai desenvolver uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+Nesse desafio, você desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova tarefa
 - Marcar e desmarcar uma tarefa como concluída
 - Remover uma tarefa da listagem
 - Mostrar o progresso de conclusão das tarefas
 
-Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos como:
+Apesar de serem poucas funcionalidades, relembrei conceitos como:
 
 - Estados
 - Imutabilidade do estado
@@ -26,18 +26,23 @@ Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos c
 - Propriedades
 - Componentização
 
-## Melhorias
+## Melhorias 🚀
 
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
 - Responsividade. Responsivo para dispositivos móveis e tablets também.
 - Adicionado temas. "Light Theme" para modo claro, e "Dark Theme" para modo escuro. Possui persistência usando o LocalStorage no ReactJS.
 
-## Stack utilizada
+## Stack utilizada ⚙
 
-**Front-end:** ReactJS, Redux, TailwindCSS, TypeScript, Vite (ambiente de desenvolvimento Frontend), Radix UI
+- ReactJS
+- Redux
+- TailwindCSS
+- TypeScript
+- Vite
+- Radix UI
 
-## Aprendizados
+## Aprendizados 📚
 
 Nesse desafio enfrentei problemas.
 
@@ -45,7 +50,7 @@ Nesse desafio enfrentei problemas.
 - Queria ordenar as tarefas feitas para ficar por último na lista, então criei um algoritmo de ordenação por tarefas feitas e não feitas: o `sortNotDoneToDone`. Uma função que usada como callback do método nativo `sort` em um array, ordena baseando-se na prop `isDone` iterando cada objeto do array.
 - Criei Generics em TypeScript para minha função de ordenação personalizada, para testar meus conhecimentos em TypeScript hehe, e ainda utilizar ao máximo o intellisense do VS Code, prevenindo erros na aplicação.
 
-### Função que me orgulho (falada acima)
+### Função que me orgulho (falada acima) ⭐
 
 ```typescript
 function sortNotDoneToDone<TaskType extends TaskState>(
@@ -69,14 +74,14 @@ array.sort(sortNotDoneToDone);
 
 > Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
 
-## Rodando localmente
+## Rodando localmente ▶
 
 > Você mesmo pode rodar e ver!
 
 Clone o projeto
 
 ```bash
-  git clone https://github.com/allbertuu/todo
+  git clone https://github.com/allbertuu/todo-list
 ```
 
 Entre no diretório do projeto
@@ -97,18 +102,18 @@ Inicie o servidor
   yarn dev
 ```
 
-## Autor(es) 🙎🏻‍♂️
+## Autor 🙎🏻‍♂️
 
 - Instagram - [@albert.vny](https://www.instagram.com/albert.vny/?hl=pt-br)
 - [Meu portfólio website](https://portfolio-allbertuu.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/albertov-albuquerque/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/allbertuu)
 
-## Feedback
+## Feedback 💬
 
 Se você tiver algum feedback, por favor me deixe saber por meio de albertovinicius3@gmail.com, ou pela seção "Contato" no meu portfólio website.
 
-## Referências
+## Referências 📑
 
 - [Método Sort - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Método Filter - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
