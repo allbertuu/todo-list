@@ -12,6 +12,8 @@ function App() {
   const [appTheme, setAppTheme] = useState(
     localStorage.getItem("theme") !== "dark" ? "light" : "dark"
   );
+  const completedTasks = tasks.filter((task) => task.isDone).length;
+  const totalTasks = tasks.length;
 
   useEffect(() => {
     const root = document.documentElement;
