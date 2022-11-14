@@ -80,7 +80,7 @@ function App() {
                   className="font-bold py-[1px] px-2 text-xs text-gray-500 dark:text-white
                   flex items-center bg-slate-200 dark:bg-[#333333] rounded-full"
                 >
-                  {tasks.filter((task) => task.isDone).length}
+                  {`${completedTasks} de ${totalTasks}`}
                 </span>
               </div>
             </div>
