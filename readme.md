@@ -30,7 +30,7 @@ Apesar de serem poucas funcionalidades, relembrei conceitos como:
 
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
-- Responsividade. Responsivo para dispositivos móveis e tablets também.
+- Responsividade. Responsivo para dispositivos móveis e tablets.
 - Adicionado temas. "Light Theme" para modo claro, e "Dark Theme" para modo escuro. Possui persistência usando o LocalStorage no ReactJS.
 
 ## Stack utilizada ⚙
@@ -105,7 +105,7 @@ Inicie o servidor
 ## Autor 🙎🏻‍♂️
 
 - Instagram - [@albert.vny](https://www.instagram.com/albert.vny/?hl=pt-br)
-- [Meu portfólio website](https://portfolio-allbertuu.vercel.app/)
+- [Meu portfólio website](https://www.albertodeveloper.com/)
 - [LinkedIn](https://www.linkedin.com/in/albertov-albuquerque/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/allbertuu)
 
