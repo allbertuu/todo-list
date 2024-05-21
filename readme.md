@@ -1,9 +1,7 @@
 # todo 📃
 
-Desafio dado pela [Rocketseat](https://www.rocketseat.com.br/) na Trilha ReactJS do Ignite.  
-Segui **fielmente** o [protótipo](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate) feito para o desafio no Figma, me botando a prova e fazendo a aplicação completa em tempo recorde. ☄  
-Fui além do que foi pedido, e estou muito contente com o resultado! 🎀  
-⌚ Terminado em: **5 horas** `=>` 2 dias
+Desafio proposto pela [Rocketseat](https://www.rocketseat.com.br/) na Trilha ReactJS do Ignite.  
+Segui **fielmente** o [protótipo](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate) feito para o desafio no Figma, indo além do que foi pedido, e estou muito contente com o resultado! 🎀  
 
 ### Deploy 💻
 
@@ -20,17 +18,17 @@ Nesse desafio, desenvolvi uma aplicação de controle de tarefas no estilo **to-
 
 Apesar de serem poucas funcionalidades, relembrei conceitos como:
 
-- Estados
+- Estados (states) no ReactJS
 - Imutabilidade do estado
 - Listas e chaves no ReactJS
-- Propriedades
+- Propriedades (props)
 - Componentização
 
-## Melhorias 🚀
+## Minhas próprias adições de funcionalidades 🚀
 
 - Aviso/bloqueio ao usuário se ele está tentando adicionar uma tarefa que já existe.
 - Aviso/bloqueio se o usuário está tentando adicionar uma tarefa sem texto.
-- Responsividade. Responsivo para dispositivos móveis e tablets.
+- Responsividade. Responsivo para dispositivos móveis, tablets e desktops.
 - Adicionado temas. "Light Theme" para modo claro, e "Dark Theme" para modo escuro. Possui persistência usando o LocalStorage no ReactJS.
 
 ## Stack utilizada ⚙
@@ -48,7 +46,7 @@ Nesse desafio enfrentei problemas.
 
 - Um deles foi que no começo do app, fiz prop drilling nos componentes, mas aquilo me deu uma agonia absurda, não gostei, e como sei Redux, criei o ambiente voltado a esse gerenciador de estados. Ganhei ganho de performance, manutenibilidade, e gerador de IDs sem precisar de libs externas (como uuid, por exemplo).
 - Queria ordenar as tarefas feitas para ficar por último na lista, então criei um algoritmo de ordenação por tarefas feitas e não feitas: o `sortNotDoneToDone`. Uma função que usada como callback do método nativo `sort` em um array, ordena baseando-se na prop `isDone` iterando cada objeto do array.
-- Criei Generics em TypeScript para minha função de ordenação personalizada, para testar meus conhecimentos em TypeScript hehe, e ainda utilizar ao máximo o intellisense do VS Code, prevenindo erros na aplicação.
+- Criei Generics em TypeScript para minha função de ordenação personalizada para testar meus conhecimentos em TypeScript, como também utilizar ao máximo o intellisense do VS Code, prevenindo erros na aplicação.
 
 ### Função que me orgulho (falada acima) ⭐
 
@@ -72,7 +70,7 @@ function sortNotDoneToDone<TaskType extends TaskState>(
 array.sort(sortNotDoneToDone);
 ```
 
-> Ressalto a importância de se estudar a base, os fundamentos. Construí com uma facilidade imensa pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muitooo usados em aplicações React.
+> Ressalto a importância de se estudar a base, os fundamentos. Construí com muita facilidade pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muito usados em aplicações ReactJS.
 
 ## Rodando localmente ▶
 
@@ -105,13 +103,13 @@ Inicie o servidor
 ## Autor 🙎🏻‍♂️
 
 - Instagram - [@albert.vny](https://www.instagram.com/albert.vny/?hl=pt-br)
-- [Meu portfólio website](https://www.albertodeveloper.com/)
+- [Meu portfólio website](https://www.albertosantos.dev/)
 - [LinkedIn](https://www.linkedin.com/in/albertov-albuquerque/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/allbertuu)
 
 ## Feedback 💬
 
-Se você tiver algum feedback, por favor me deixe saber por meio de albertovinicius3@gmail.com, ou pela seção "Contato" no meu portfólio website.
+Se você tiver algum feedback, por favor me deixe saber por meio do meu LinkedIn 💬💙 (seção [Autor](#autor-%EF%B8%8F)).
 
 ## Referências 📑
 
