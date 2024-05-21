@@ -1,4 +1,4 @@
-# todo 📃
+# todo-list 📃
 
 Desafio proposto pela [Rocketseat](https://www.rocketseat.com.br/) na Trilha ReactJS do Ignite.  
 Segui **fielmente** o [protótipo](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate) feito para o desafio no Figma, indo além do que foi pedido, e estou muito contente com o resultado! 🎀  
@@ -70,7 +70,7 @@ function sortNotDoneToDone<TaskType extends TaskState>(
 array.sort(sortNotDoneToDone);
 ```
 
-> Ressalto a importância de se estudar a base, os fundamentos. Construí com muita facilidade pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências), disponibilizei alguns links úteis de métodos JS muito usados em aplicações ReactJS.
+> Ressalto a importância de se estudar a base, os fundamentos. Construí com muita facilidade pois sabia o que queria, e como fazer a principio. Na seção [Referências](#referências-), disponibilizei alguns links úteis de métodos JS muito usados em aplicações ReactJS.
 
 ## Rodando localmente ▶
 
