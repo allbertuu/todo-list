@@ -28,6 +28,12 @@ export const CreateNewTask = () => {
     setInputValue(e.target.value);
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleAddTask();
+    }
+  };
+
   return (
     <div className="flex h-14 gap-2">
       <input
@@ -35,6 +41,7 @@ export const CreateNewTask = () => {
         value={inputValue}
         placeholder="Adicione uma nova tarefa"
         onChange={(e) => handleInputChange(e)}
+        onKeyDown={handleKeyPress}
         className="text-base flex-1 w-full dark:text-white/80 dark:bg-[#262626]
         bg-slate-100 outline-gray-200 text-black/80
         dark:placeholder:text-[#808080] rounded-lg p-4 outline outline-1
